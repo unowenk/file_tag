@@ -1,0 +1,109 @@
+
+
+文件标签式管理-标签分类存储、检索、浏览、合并标签（移入、复制、连接、标签管理、标签分组、标签查询）（多标签批量添加，逗号）、（文件备注？文件夹readme）（标签：未标记完成）
+            乱码文件夹（hash）一层文件夹（22*10）--（混合：乱码长度，指定乱码等级，压缩级连接目录。过长，提出），视窗分类文件夹连接、打开文件夹、统计-标签-文件、标星注重、归档（备份删除）
+        taglyst
+        -7天，168（终身），250（终身，双设备）
+        https://www.iplaysoft.com/taglyst.html
+        http://www.taglyst.com/download-iplaysoft
+        https://shop317733848.taobao.com/
+    每天都要打开的 Windows 资源管理器，如何让它更好用？
+    https://sspai.com/post/57313
+    换个方式高效管理 Windows 文件，灵活、精准的标签工具：Tabbles
+    -购买
+    -破解版
+    数据库，标签查找,超便签检索
+    和很多文件管理数据库类似，「标签」这种所谓的新属性当然不可能直接添加在文件本身属性中，
+    Tabbles 只是将文件标签放在了一个外部的数据库中，并将数据库和现有的文件系统进行了对应整合，
+    这样在 Tabbles 中我们不仅可以建立为文件添加「标签」这个新「属性」，还可以直接在里面实现基于标签的文件管理、检索以及筛选操作。
+    https://sspai.com/post/60472
+    https://tabbles.net/download-page/
+    http://www.pc6.com/softview/SoftView_51098.html
+    https://www.lhdown.com/soft/27921.html
+    http://www.opdown.com/soft/84490.html
+    Windows资源管理器有没有可以给文件贴上标签分类的功能？或者替代软件
+    https://www.zhihu.com/question/21895273
+    XYPlorer
+    标签信息保持在程序目录下的tag.dat文件。
+    在本程序中移动或者复制带标签的文件，标签会跟随文件移动，不会消失。
+    https://tieba.baidu.com/p/4437748163?red_tag=1315748495
+    QTTabBar 「资源管理器」该有的样子
+    多栏目、预览文件、可编程增加插件
+    -免费开源
+    https://sspai.com/post/52521
+    http://qttabbar.sourceforge.net/
+    https://sourceforge.net/projects/qttabbar/files/
+    https://github.com/indiff/qttabbar/tree/5f4a025ec47b7b25806b249d574a39ea24ac25ad
+    Total Commander,
+    系统级别的「资源管理工具集合」，基于管理器的界面提供了各种形式的高效功能，而不少功能都可以说是彻底解决了资源管理的常见痛点。
+    -购买
+    https://www.ghisler.com/
+
+额
+文本多标签分类工具——Magpie
+https://zhuanlan.zhihu.com/p/29875696
+
+如何高效率整理电脑上的文件 ？ - 少数派的回答 - 知乎
+https://www.zhihu.com/question/19927392/answer/768241103
+https://www.zhihu.com/question/19927392
+
+
+
+https://blog.csdn.net/sinat_40692412/article/details/85778410
+C# 文件复制和移动操作（单个文件）
+https://www.cnblogs.com/felix-wang/p/6362236.html
+
+
+鼠标右键的功能
+https://zhidao.baidu.com/question/193325769.html
+为特定的文件类型右键菜单添加选项可以通过修改注册表来实现，只不过有一种更为简单并且安全的方法，也就是在文件夹选项中进行修改。
+例如要在MP3文件右键菜单中增加一项“用MPlayer（Windows Medis player 10）播放”，具体操作如下：依次单击资源管理器“工具”|“文件夹选项”|“文件类型”，在已注册文件类型列表框中选中“MP3”，点击下方的“高级”按钮，在弹出的对话框中单击“新建”按钮，然后在“操作”文本框中输入“用MPlayer播放”，在“用于执行操作的应用程序”框中输入“"C:\Program Files\Windows Media Player\mplayer.exe" /Play "%L"”，确定后退出文件夹选项即可。
+文件类对象的右键选单
+为文件类对象添加右键菜单项，需要通过修改注册表来实现。举一个简单的例子，为文件类对象增加一个“设为隐藏属性”的菜单项，具体操作方法如下：
+运行Regedit, 在注册表HKEY_CLASSES_ROOT\*分支下新建一项“Shell”，并在该项下级再创建一个新项“AttHide”，修改右侧窗格中“默认”键值为“设为隐藏属性”，然后在“AttHide”下级再创建一新项，命名为“Command”。
+在注册表HKEY_CLASSES_ROOT\*\shell\AttHide\Command右侧窗格中双击“默认”键值，弹出“编辑字符串”对话框，在“数值数据”框中输入“attrib.exe +h "%1"”（注意引号不要输入），确定后退出注册表编辑器。现在用鼠标右键单击任意一个文件，可以看到在弹出的快捷菜单中增加了一项“设为隐藏属性”，选中它就可以为该文件指定隐藏属性。
+文件夹类对象的右键选单
+为文件夹类对象添加右键菜单项，可以在注册表HKEY_CLASSES_ROOT\Directory\Shell分支下，用下面的方法进行同样的设置。
+例如要在文件夹的右键菜单中添加“命令提示符”选项。在注册表HKEY_CLASSES_ROOT\Directory\shell分支下新建一项“CommandPrompt”，修改右侧窗格中的“默认”键值为“命令提示符”，并在该项下级再建一个新项“Command”，将右侧窗格中“默认”键值设为“cmd.exe /k cd "%1"”。现在我们就可以不需要输入长长的CD命令就切换到指定的目录了。
+驱动器类对象的右键选单
+要快速激活屏保，我们可以将屏保请进驱动器的右键菜单中，具体方法如下：在注册表HKEY_CLASSES_ROOT\Drive\shell分支下新建一项“LoadSCR”，修改右侧窗格的“默认”键值为“屏幕保护”，并在该项下级再创建一个新项“Command”，将右侧窗格中“默认”键值设为“C:\windows\system32\logon.scr /s "%1"”，刷新后退出注册表编辑器。这时用右键单击任意驱动器，从菜单中选择“屏幕保护”，就可以直接运行屏幕保护程序了。
+为所有文件和文件夹添加右键选单
+如果想要在所有的文件和文件夹的右键菜单中加入特定的菜单项，可以在注册表编辑器中展开HKEY_CLASSES_ROOT\AllFilesystemObjects，然后依次新建“Shell\命令\Command”，其他操作类似前面。
+右键级联菜单的扩展
+“打开方式”菜单
+Windows XP中的“打开方式”是一个很有用的菜单项。例如对于同一个视频文件，我们可以通过“打开方式”菜单快速调用不同的播放器进行播放，而无需修改文件的关联。当我们通过“打开方式”|“选择程序”调用某个程序打开文件后，该程序就会自动添加到“打开方式”项目中。
+系统使用一段时间后，会造成“打开方式”菜单中的项目增多，这时就有必要进行清理了。以清理avi格式文件的“打开方式”菜单为例：运行Regedit，打开注册表编辑器，依次展开HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.avi，我们可以看到“OpenWithList”，选中它，在右侧窗格中就可以看到AVI格式文件的“打开方式”菜单所关联的各种应用程序。选中需要清理的项目，按下“DEL”键删除，刷新后退出注册表编辑器即可。
+“发送到”菜单
+“发送到”菜单对应的是一个“SendTo”文件夹，它位于Windows XP中“C:\Documents and Settings\”目录下，这个文件夹中的内容就是“发送到”级联菜单中的项目。
+我们可以利用此项功能来快速备份文件，甚至可以直接备份到压缩包中。首先，创建一个备份文件夹D:\Bak2004，然后用鼠标右键拖动它到“SendTo”目录中，松开鼠标，创建一个快捷方式，并将其重命名为“备份文件夹”。这时在资源管理器中用鼠标右键单击文件，就会出现“发送到”|“备份文件夹”，又快又方便。
+“新建”菜单
+对于任何已经在Windows 注册的文件类型，我们可以在相应的扩展键名中加入“ShellNew”新项，然后为其指定Windows 如何创建新文件的设置，最常用的是加入“NullFile”和“Command”值，这样就可以将这种文件类型添加到“新建”级联菜单中。
+在注册表编辑器展开HKEY_CLASSES\ROOT\.htm,创建一新项“ShellNew”，然后新建字符串值“NullFile”，键值为空，按F5键刷新后退出。这时在桌面上单击鼠标右键，打开“新建”级联菜单，就会看到多出了一项“HTML Document”当需要将“新建”菜单中无用的文件类型删除时，只要在注册表中找到相应的文件扩展名，然后将其下的“ShellNew”子项删除即可。
+特殊的右键菜单命令
+● 添加“清空回收站”选项
+在注册表HKEY_CLASSES_ROOT\*\shellex\ContextMenuHandlers分支下创建一新项“{645FF040-5081-101B-9F08-00AA002F954E}”，确定后退出，当右击任意文件时，快捷菜单中都会有一个“清空回收站”的选项。
+● 添加“在新窗口中打开”选项
+在注册表HKEY_CLASSES_ROOT\Directory\shell分支下，创建一个新项“NewWindow”，将右侧窗格中“默认”键值改为“在新窗口中打开”，并在“NewWindow”下再建一新项“Command”，修改右侧窗格中“默认”键值为“explorer.exe %1”。
+● 添加“快速重启”选项
+在注册表HKEY_CLASSES_ROOT\Directory\shell分支下，创建一个新项“Reboot”，将右侧窗格中“默认”键值改为“快速重启”，并在“Reboot”下再建一个新项“Command”，修改右侧窗格中“默认”键值为“ShutDown -r -t 00”即可。
+● 添加“复制到”选项
+在注册表HKEY_CLASSES_ROOT\AllFile-systemObjects\shellex\ContextMenuHandlers分支下，创建一新项“Copy To”，修改右侧窗格中“默认”键值为“{C2FBB630-2971-11D1-A18C-00C04FD75D13}”即可。
+● 添加“移动到”选项
+在注册表HKEY_CLASSES_ROOT\AllFilesystemObjects\shellex\ContextMenu-Handlers分支下，创建一新项“Move To”，修改右侧窗格中“默认”键值为“{C2FBB631-2971-11D1-A18C-00C04FD75D13}”即可。
+优化系统右键菜单
+在系统使用一段时间后，尤其是经常安装新的软件，会使原本苗条的右键菜单变得臃肿，导致反应迟钝。那么平时该如何注意这方面的问题呢？下面提四点建议仅供参考。
+首先，尽量不安装同类软件。在选择软件时，可以根据自己的喜好选择同类别某一软件，这样可避免右键菜单中多出类似的菜单项。例如计算机中已经安装了ACDSee，就不需要再安装SlowView、Irfan View之类的看图软件，因为一旦安装后，就会出现与“Browse with ACDSee”类似的“Browse with SlowView”、“Browse with Irfan View”等右键菜单命令。
+其次，正常安装卸载软件。如果我们多次重复安装软件，而不是先将原有的软件卸载后再重新安装，这样有可能导致右键菜单出现重复或错误的项目。因此在安装软件前最好先看看是否曾经安装，如果安装过，应卸载后再进行安装。
+第三，使用折叠式菜单。现在有很多软件制作时考虑到这一点，允许用户设置在右键中显示全部菜单还是折叠式菜单，比较典型的有WinZip、WinRAR等。以WinRAR为例，设置方法如下：打开“选项”|“设置”，单击“综合选项”标签页，在“外壳集成”一栏中勾选“折叠关联菜单”即可。
+第四，借助工具清理右键菜单。除了前面的几种方法外，还可以利用专门的优化工具软件，如超级兔子魔法设置，来删除多余的右键菜单项。
+https://jingyan.baidu.com/article/fb48e8be3212766e632e147f.html
+[HKEY_CLASSES_ROOT\dllfile\shell\register]
+@="注册DLL文件"
+[HKEY_CLASSES_ROOT\dllfile\shell\register\command]
+@="regsvr32 %1"
+
+https://jingyan.baidu.com/article/363872ec39aa3c6e4aa16f70.html
+HKEY_CLASSES_ROOT\Directory\Background\shell
+https://www.cnblogs.com/wutaotaosin/articles/12092556.html
+
+

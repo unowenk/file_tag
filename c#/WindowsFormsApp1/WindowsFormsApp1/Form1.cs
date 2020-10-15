@@ -11,6 +11,7 @@ using System.Security.Cryptography;
 using System.Collections;
 using System.IO;
 using System.Drawing.Printing;
+using System.Text.Json;
 
 namespace WindowsFormsApp1
 {
@@ -105,11 +106,22 @@ namespace WindowsFormsApp1
         }
         public void readConfig()
         {
-
+            //JsonElement;
         }
         public void maintain_dirlink()
         {
 
+            foreach (var item in listBox_filename.Items)
+            {
+                Directory.CreateDirectory(tag_path.Text);
+                string filename = item as string;
+                string out_name = Path.Combine(tag_path.Text, Path.GetFileName(filename));
+                if (File.Exists(out_name))
+                    if (MessageBox.Show("文件已存在,覆盖吗?", "文件已存在",
+                        MessageBoxButtons.YesNo) == DialogResult.No)
+                        continue;
+                File.Move(filename, out_name, true);
+            }
         }
 
         private void button_move_Click(object sender, EventArgs e)

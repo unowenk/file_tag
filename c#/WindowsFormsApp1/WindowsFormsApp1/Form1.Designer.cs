@@ -163,7 +163,7 @@ namespace WindowsFormsApp1
             this.base_dir.Name = "base_dir";
             this.base_dir.Size = new System.Drawing.Size(155, 30);
             this.base_dir.TabIndex = 13;
-            this.base_dir.Text = "d:\\basedir";
+            this.base_dir.Text = "D:\\tagfilerepos";
             this.base_dir.TextChanged += new System.EventHandler(this.base_dir_TextChanged);
             // 
             // del_tag

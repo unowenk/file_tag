@@ -1,0 +1,8 @@
+.vs
+obj
+.ipynb_checkpoints
+*.pdb
+*.pdb
+*.runtimeconfig.json
+*.runtimeconfig.dev.json
+*.deps.json

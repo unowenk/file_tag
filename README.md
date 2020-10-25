@@ -24,3 +24,4 @@
 管理文件标签功能：增删改，文件的移动、按标签（链接）筛选检索文件
 
 
+https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-desktop-3.1.9-windows-x64-installer

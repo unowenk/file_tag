@@ -42,6 +42,7 @@ namespace WindowsFormsApp1
             this.tag_path = new System.Windows.Forms.TextBox();
             this.base_dir = new System.Windows.Forms.TextBox();
             this.del_tag = new System.Windows.Forms.Button();
+            this.textBox_search = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button_input_tags
@@ -70,23 +71,23 @@ namespace WindowsFormsApp1
             // button_reverse
             // 
             this.button_reverse.AllowDrop = true;
-            this.button_reverse.Enabled = false;
             this.button_reverse.Location = new System.Drawing.Point(13, 30);
             this.button_reverse.Name = "button_reverse";
             this.button_reverse.Size = new System.Drawing.Size(66, 34);
             this.button_reverse.TabIndex = 3;
             this.button_reverse.Text = "反选";
             this.button_reverse.UseVisualStyleBackColor = true;
+            this.button_reverse.Click += new System.EventHandler(this.button_reverse_Click);
             // 
             // button_del_select_filename
             // 
-            this.button_del_select_filename.Enabled = false;
             this.button_del_select_filename.Location = new System.Drawing.Point(116, 30);
             this.button_del_select_filename.Name = "button_del_select_filename";
             this.button_del_select_filename.Size = new System.Drawing.Size(66, 34);
             this.button_del_select_filename.TabIndex = 4;
             this.button_del_select_filename.Text = "删除";
             this.button_del_select_filename.UseVisualStyleBackColor = true;
+            this.button_del_select_filename.Click += new System.EventHandler(this.button_del_select_filename_Click);
             // 
             // listBox_tag
             // 
@@ -101,15 +102,14 @@ namespace WindowsFormsApp1
             // 
             // listBox_has_tag
             // 
-            this.listBox_has_tag.Enabled = false;
             this.listBox_has_tag.FormattingEnabled = true;
             this.listBox_has_tag.ItemHeight = 24;
             this.listBox_has_tag.Location = new System.Drawing.Point(504, 71);
             this.listBox_has_tag.Name = "listBox_has_tag";
             this.listBox_has_tag.ScrollAlwaysVisible = true;
-            this.listBox_has_tag.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.listBox_has_tag.Size = new System.Drawing.Size(180, 124);
             this.listBox_has_tag.TabIndex = 6;
+            this.listBox_has_tag.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listBox_has_tag_MouseDoubleClick);
             // 
             // button_has2now
             // 
@@ -130,18 +130,17 @@ namespace WindowsFormsApp1
             // 
             // button_move
             // 
-            this.button_move.Enabled = false;
-            this.button_move.Location = new System.Drawing.Point(193, 309);
+            this.button_move.Location = new System.Drawing.Point(362, 305);
             this.button_move.Name = "button_move";
-            this.button_move.Size = new System.Drawing.Size(135, 34);
+            this.button_move.Size = new System.Drawing.Size(152, 34);
             this.button_move.TabIndex = 10;
-            this.button_move.Text = "移入(暂时禁用";
+            this.button_move.Text = "移入(不可撤销)";
             this.button_move.UseVisualStyleBackColor = true;
             this.button_move.Click += new System.EventHandler(this.button_move_Click);
             // 
             // button_copy
             // 
-            this.button_copy.Location = new System.Drawing.Point(354, 309);
+            this.button_copy.Location = new System.Drawing.Point(221, 307);
             this.button_copy.Name = "button_copy";
             this.button_copy.Size = new System.Drawing.Size(112, 34);
             this.button_copy.TabIndex = 11;
@@ -177,11 +176,20 @@ namespace WindowsFormsApp1
             this.del_tag.UseVisualStyleBackColor = true;
             this.del_tag.Click += new System.EventHandler(this.del_tag_Click);
             // 
+            // textBox_search
+            // 
+            this.textBox_search.Location = new System.Drawing.Point(516, 32);
+            this.textBox_search.Name = "textBox_search";
+            this.textBox_search.Size = new System.Drawing.Size(150, 30);
+            this.textBox_search.TabIndex = 15;
+            this.textBox_search.TextChanged += new System.EventHandler(this.textBox_search_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(709, 354);
+            this.Controls.Add(this.textBox_search);
             this.Controls.Add(this.del_tag);
             this.Controls.Add(this.base_dir);
             this.Controls.Add(this.tag_path);
@@ -222,6 +230,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.TextBox tag_path;
         private System.Windows.Forms.TextBox base_dir;
         private System.Windows.Forms.Button del_tag;
+        private System.Windows.Forms.TextBox textBox_search;
     }
 }
 
